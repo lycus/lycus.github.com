@@ -1,117 +1,97 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!doctype html>
+<html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link rel="stylesheet" href="http://twitter.github.com/bootstrap/1.4.0/bootstrap.min.css">
         <title>The Lycus Foundation</title>
         <style type="text/css">
-            body
-            {
-                font-family: Verdana;
-            }
-            h2
-            {
-                font-size: large;
-            }
-            #lycus_header
-            {
-                text-align: center;
-            }
-            #lycus_title
-            {
-                font-family: Georgia;
-            }
-            #lycus_body
-            {
-                width: 900px;
-                margin-left: auto;
-                margin-right: auto;
-            }
-            #lycus_menu
-            {
-                width: 20%;
-                float: left;
-            }
-            #lycus_list
-            {
-                list-style-type: none;
-            }
-            .lycus_item
-            {
-                padding: 5px;
-            }
-            #lycus_text
-            {
-                width: 80%;
-                float: left;
+            #main {
+                margin-top: 30px;
             }
         </style>
     </head>
     <body>
-        <div id="lycus_header">
-            <h1 id="lycus_title">The Lycus Foundation</h1>
-            <img src="Lycus.png" alt="Lycus" />
-        </div>
-        <div id="lycus_body">
-            <div id="lycus_menu">
-                <ul id ="lycus_list">
-                    <li class="lycus_item">
-                        <a href="#overview">Overview</a>
-                    </li>
-                    <li class="lycus_item">
-                        <a href="#projects">Projects</a>
-                    </li>
-                    <li class="lycus_item">
-                        <a href="#papers">Papers</a>
-                    </li>
-                    <li class="lycus_item">
-                        <a href="#people">People</a>
-                    </li>
-                    <li class="lycus_item">
-                        <a href="#contact">Contact</a>
-                    </li>
-                </ul>
-            </div>
-            <div id="lycus_text">
-                <div>
-                    <h2 id="overview">Overview</h2>
-                    <p>
-                        Welcome to the Lycus Foundation. This is a non-profit organization
-                        centered around the development and maintenance of open source
-                        developer tools such as compilers, virtual machines, and analyzers,
-                        as well as programming language specifications.
-                    </p>
-                    <p>
-                        Useful links:
-                    </p>
-                    <ul>
-                        <li>
-                            <a href="http://github.com/lycus">GitHub organization</a>
-                        </li>
-                        <li>
-                            <a href="http://trello.com/lycus">Trello organization</a>
-                        </li>
-                        <li>
-                            <a href="http://groups.google.com/group/lycus">Google Groups mailing list</a>
-                        </li>
-                        <li>
-                            <a href="irc://irc.freenode.net/lycus">IRC channel</a>
-                        </li>
-                        <li>
-                            <a href="http://ci.lycus.org">Jenkins</a>
-                        </li>
-                        <li>
-                            <a href="http://nightlies.lycus.org">Nightly builds</a>
-                        </li>
-                    </ul>
+        <div id="main" class="container">
+            <div id="nav" class="row">
+                <div class="span3">
+                    <img id="logo" src="Lycus.png" alt="Lycus" width="128" height="128" />
+                    <div class="well">
+                        <h5>Jump to</h5>
+                        <ul>
+                            <li>
+                                <a href="#overview">Overview</a>
+                            </li>
+                            <li>
+                                <a href="#projects">Projects</a>
+                            </li>
+                            <li>
+                                <a href="#papers">Papers</a>
+                            </li>
+                            <li>
+                                <a href="#people">People</a>
+                            </li>
+                            <li>
+                                <a href="#contact">Contact</a>
+                            </li>
+                        </ul>
+
+                        <h5>Useful links</h5>
+                        <ul>
+                            <li>
+                                <a href="http://github.com/lycus">GitHub</a>
+                            </li>
+                            <li>
+                                <a href="http://trello.com/lycus">Trello</a>
+                            </li>
+                            <li>
+                                <a href="http://groups.google.com/group/lycus">Google Groups</a>
+                            </li>
+                            <li>
+                                <a href="irc://irc.freenode.net/lycus">IRC</a>
+                            </li>
+                            <li>
+                                <a href="http://ci.lycus.org">Jenkins</a>
+                            </li>
+                            <li>
+                                <a href="http://nightlies.lycus.org">Nightlies</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-                <div>
-                    <h2 id="projects">Projects</h2>
-                    <p>
-                        The Lycus Foundation manages the following projects:
-                    </p>
-                    <ul>
-                        <li>
-                            <a href="http://github.com/lycus/mci">MCI</a>
+
+                <div class="span13">
+                    <h1>The Lycus Foundation</h1>
+
+                    <div class="row">
+                        <div class="span3">
+                            <h2 id="overview">Overview</h2>
+                            <p>
+                                A brief explanation of who we are and what we
+                                do.
+                            </p>
+                        </div>
+                        <div class="span10">
+                            <p>
+                                Welcome to the Lycus Foundation. This is a non-profit organization
+                                centered around the development and maintenance of open source
+                                developer tools such as compilers, virtual machines, and analyzers,
+                                as well as programming language specifications.
+                            </p>
+                        </div>
+                    </div>
+
+                    <hr />
+
+                    <div class="row">
+                        <div class="span3">
+                            <h2 id="projects">Projects</h2>
+                            <p>
+                                A list of projects managed by the Lycus
+                                Foundation.
+                            </p>
+                        </div>
+                        <div class="span10">
+                            <h3><a href="http://github.com/lycus/mci">MCI</a></h3>
                             <p>
                                 The MCI (Managed Compiler Infrastructure) is a modern and
                                 intuitive compiler infrastructure written in the D programming
@@ -121,9 +101,8 @@
                                 in a virtual machine and typically use a garbage collector for
                                 memory management.
                             </p>
-                        </li>
-                        <li>
-                            <a href="http://github.com/lycus/cursive">Cursive</a>
+
+                            <h3><a href="http://github.com/lycus/cursive">Cursive</a></h3>
                             <p>
                                 A functional-imperative language primarily used as a proof of
                                 concept for implementing a language on top of the MCI. It has
@@ -131,9 +110,8 @@
                                 classes/interfaces (OOP), generics, lambda functions with
                                 closures, (limited) type inference, and garbage collection.
                             </p>
-                        </li>
-                        <li>
-                            <a href="http://github.com/lycus/cesura">Cesura</a>
+
+                            <h3><a href="http://github.com/lycus/cesura">Cesura</a></h3>
                             <p>
                                 A pragmatic functional programming language built on top of
                                 the MCI. Emphasis is put on expressiveness and usability in
@@ -141,48 +119,77 @@
                                 relies on the MCI's code generation and garbage collection
                                 infrastructures.
                             </p>
-                        </li>
-                        <li>
-                            <a href="http://github.com/lycus/libffi-d">libffi-d</a>
+
+                            <h3><a href="http://github.com/lycus/libffi-d">libffi-d</a></h3>
                             <p>
                                 Binding to the <a href="http://sourceware.org/libffi/">libffi</a>
                                 library for the D programming language.
                             </p>
-                        </li>
-                    </ul>
-                </div>
-                <div>
-                    <h2 id="papers">Papers</h2>
-                    <p>
-                        No papers have been published yet.
-                    </p>
-                </div>
-                <div>
-                    <h2 id="people">People</h2>
-                    <p>
-                        The following people are currently actively developing the projects under
-                        the Lycus Foundation umbrella:
-                    </p>
-                    <ul>
-                        <li>
-                            Alex Rønne Petersen: <a href="http://xtzgzorex.wordpress.com/">Site</a> / <a href="mailto:xtzgzorex@gmail.com">Email</a>
-                        </li>
-                        <li>
-                            Thomas Jost: <a href="mailto:wolfgangsteff@gmail.com">Email</a>
-                        </li>
-                        <li>
-                            Tony Young: <a href="mailto:rofflwaffls@gmail.com">Email</a>
-                        </li>
-                    </ul>
-                </div>
-                <div>
-                    <h2 id="contact">Contact</h2>
-                    <p>
-                        For any inquiries regarding the foundation, please
-                        <a href="mailto:xtzgzorex@gmail.com">contact Alex</a>.
-                    </p>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <hr />
+
+                    <div class="row">
+                        <div class="span3">
+                            <h2 id="papers">Papers</h2>
+                            <p>
+                                Papers published relating to projects by the
+                                Lycus Foundation.
+                            </p>
+                        </div>
+                        <div class="span10">
+                            <p>
+                                No papers have been published yet.
+                            </p>
+                        </div>
+                    </div>
+
+                    <hr />
+
+                    <div class="row">
+                        <div class="span3">
+                            <h2 id="people">People</h2>
+                            <p>
+                                Active developers who are under the Lycus
+                                Foundation umbrella.
+                            </p>
+                        </div>
+                        <div class="span10">
+                            <dl>
+                                <dt>
+                                    Alex Rønne Petersen
+                                </dt>
+                                <dd>
+                                    <a href="http://xtzgzorex.wordpress.com/">Site</a> / <a href="mailto:xtzgzorex@gmail.com">Email</a>
+                                </dd>
+
+                                <dt>
+                                    Thomas Jost
+                                </dt>
+                                <dd>
+                                    <a href="mailto:wolfgangsteff@gmail.com">Email</a>
+                                </dd>
+
+                                <dt>
+                                    Tony Young
+                                </dt>
+                                <dd>
+                                    <a href="mailto:rofflwaffls@gmail.com">Email</a>
+                                </dd>
+                            </dl>
+                        </div>
+                    </div>
                 </div>
             </div>
+            <footer>
+                <p>
+                    &copy; Copyright The Lycus Foundation 2011-2012.
+                    For any inquiries regarding the foundation, please
+                    <a href="mailto:xtzgzorex@gmail.com">contact Alex</a>.
+                </p>
+            </footer>
         </div>
     </body>
 </html>
