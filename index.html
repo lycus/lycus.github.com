@@ -1,44 +1,18 @@
 <!doctype html>
 <html>
     <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-        <link rel="stylesheet" href="http://twitter.github.com/bootstrap/1.4.0/bootstrap.min.css">
         <title>The Lycus Foundation</title>
-        <style type="text/css">
-            #main
-            {
-                margin-top: 30px;
-            }
-
-            #logo
-            {
-                text-align: center;
-            }
-
-            #well
-            {
-                background-color: #E8E8E8;
-            }
-
-            *.anchor
-            {
-                color: inherit;
-            }
-
-            *.anchor:hover
-            {
-                color: inherit;
-                text-decoration: inherit;
-            }
-        </style>
+        <link href="http://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700,700italic" rel="stylesheet" type="text/css" />
+        <link href="http://twitter.github.com/bootstrap/assets/css/bootstrap.css" rel="stylesheet" type="text/css" />
+        <link rel="stylesheet" href="darkstrap.css" rel="stylesheet" type="text/css" />
+        <link rel="stylesheet" href="stylesheet.css" rel="stylesheet" type="text/css" />
+        <meta charset="utf-8" />
     </head>
     <body>
         <div id="main" class="container">
-            <div class="row">
-                <div id="logo" class="span3">
-                    <img src="Lycus.png" alt="Lycus" width="128" height="128" />
-                </div>
-                <div class="span13">
+            <div class="well clearfix">
+                <img class="logo" src="Lycus.png" alt="Lycus" width="128" height="128" />
+                <div class="flavor">
                     <h1><a class="anchor" href="">The Lycus Foundation</a></h1>
 
                     <p>
@@ -86,128 +60,112 @@
                     </div>
                 </div>
 
-                <div class="span13">
-                    <div class="row">
-                        <div class="span3">
-                            <h2 id="projects"><a class="anchor" href="#projects">Projects</a></h2>
-                            <p>
-                                A list of projects managed by the Lycus Foundation.
-                            </p>
-                        </div>
-                        <div class="span10">
-                            <h3><a href="http://github.com/lycus/mci">MCI</a> (<a href="http://mci.readthedocs.org">Docs</a>)</h3>
-                            <p>
-                                The MCI (Managed Compiler Infrastructure) is a modern and
-                                intuitive compiler infrastructure written in the D programming
-                                language. It provides a simple, extensible API specialized for
-                                modern-day programming language designs. It is primarily
-                                intended for so-called "managed" languages, which usually run
-                                in a virtual machine and typically use a garbage collector for
-                                memory management.
-                            </p>
+                <div class="span9">
+                    <div class="page-header">
+                        <h2 id="projects">
+                            <a class="anchor" href="#projects">Projects</a>
+                            <small>A list of projects managed by the Lycus Foundation.</small>
+                        </h2>
+                    </div>
+                    <h3><a href="http://github.com/lycus/mci">MCI</a> (<a href="http://mci.readthedocs.org">Docs</a>)</h3>
+                    <p>
+                        The MCI (Managed Compiler Infrastructure) is a modern and
+                        intuitive compiler infrastructure written in the D programming
+                        language. It provides a simple, extensible API specialized for
+                        modern-day programming language designs. It is primarily
+                        intended for so-called "managed" languages, which usually run
+                        in a virtual machine and typically use a garbage collector for
+                        memory management.
+                    </p>
 
-                            <h3><a href="http://github.com/lycus/exvm">ExVM</a> (<a href="http://exvm.readthedocs.org">Docs</a>)</h3>
-                            <p>
-                                ExVM (Extensible Virtual Machine) is a JIT-compiling virtual
-                                machine built on top of the MCI (Managed Compiler Infrastructure).
-                                It is a much more high-level virtual machine, defining an ABI
-                                (application binary interface) for many common compiler features
-                                such as name mangling, static/TLS data initialization, runtime
-                                type information and reflection, reified generics, etc.
-                            </p>
+                    <h3><a href="http://github.com/lycus/exvm">ExVM</a> (<a href="http://exvm.readthedocs.org">Docs</a>)</h3>
+                    <p>
+                        ExVM (Extensible Virtual Machine) is a JIT-compiling virtual
+                        machine built on top of the MCI (Managed Compiler Infrastructure).
+                        It is a much more high-level virtual machine, defining an ABI
+                        (application binary interface) for many common compiler features
+                        such as name mangling, static/TLS data initialization, runtime
+                        type information and reflection, reified generics, etc.
+                    </p>
 
-                            <h3><a href="http://github.com/lycus/cursive">Cursive</a> (<a href="http://cursive.readthedocs.org">Docs</a>)</h3>
-                            <p>
-                                A functional-imperative language primarily used as a proof of
-                                concept for implementing a language on top of the MCI. It has
-                                a simple C-like syntax, with the addition of features such as
-                                classes/interfaces (OOP), generics, lambda functions with
-                                closures, (limited) type inference, and garbage collection.
-                            </p>
+                    <h3><a href="http://github.com/lycus/cursive">Cursive</a> (<a href="http://cursive.readthedocs.org">Docs</a>)</h3>
+                    <p>
+                        A functional-imperative language primarily used as a proof of
+                        concept for implementing a language on top of the MCI. It has
+                        a simple C-like syntax, with the addition of features such as
+                        classes/interfaces (OOP), generics, lambda functions with
+                        closures, (limited) type inference, and garbage collection.
+                    </p>
 
-                            <h3><a href="http://github.com/lycus/libffi-d">libffi-d</a></h3>
-                            <p>
-                                Binding to the <a href="http://sourceware.org/libffi">libffi</a>
-                                library for the D programming language.
-                            </p>
+                    <h3><a href="http://github.com/lycus/libffi-d">libffi-d</a></h3>
+                    <p>
+                        Binding to the <a href="http://sourceware.org/libffi">libffi</a>
+                        library for the D programming language.
+                    </p>
 
-                            <h3><a href="http://github.com/lycus/libgc-d">libgc-d</a></h3>
-                            <p>
-                                Binding to the <a href="http://www.hpl.hp.com/personal/Hans_Boehm/gc">libgc</a>
-                                library for the D programming language.
-                            </p>
+                    <h3><a href="http://github.com/lycus/libgc-d">libgc-d</a></h3>
+                    <p>
+                        Binding to the <a href="http://www.hpl.hp.com/personal/Hans_Boehm/gc">libgc</a>
+                        library for the D programming language.
+                    </p>
 
-                            <h3><a href="http://github.com/lycus/pegged">Pegged</a></h3>
-                            <p>
-                                We maintain a fork of the Pegged parser generator where we
-                                develop various patches and fixes to maintain support for the
-                                various operating systems, compilers, and architectures that
-                                we support in our other projects. Additionally, our fork
-                                contains a proper Waf build system that integrates with the
-                                rest of our ecosystem.
-                            </p>
-                        </div>
+                    <h3><a href="http://github.com/lycus/pegged">Pegged</a></h3>
+                    <p>
+                        We maintain a fork of the Pegged parser generator where we
+                        develop various patches and fixes to maintain support for the
+                        various operating systems, compilers, and architectures that
+                        we support in our other projects. Additionally, our fork
+                        contains a proper Waf build system that integrates with the
+                        rest of our ecosystem.
+                    </p>
+
+                    <div class="page-header">
+                        <h2 id="papers">
+                            <a class="anchor" href="#papers">Papers</a>
+                            <small>Papers published relating to projects by the Lycus Foundation.</small>
+                        </h2>
                     </div>
 
-                    <hr />
+                    <p>
+                        No papers have been published yet.
+                    </p>
 
-                    <div class="row">
-                        <div class="span3">
-                            <h2 id="papers"><a class="anchor" href="#papers">Papers</a></h2>
-                            <p>
-                                Papers published relating to projects by the
-                                Lycus Foundation.
-                            </p>
-                        </div>
-                        <div class="span10">
-                            <p>
-                                No papers have been published yet.
-                            </p>
-                        </div>
+                    <div class="page-header">
+                        <h2 id="people">
+                            <a class="anchor" href="#people">People</a>
+                            <small>Active developers who are under the Lycus Foundation umbrella.</small>
+                        </h2>
                     </div>
 
-                    <hr />
+                    <dl>
+                        <dt>
+                            Alex Rønne Petersen
+                        </dt>
+                        <dd>
+                            <a href="http://xtzgzorex.wordpress.com/">Site</a> / <a href="mailto:alex@lycus.org">Email</a>
+                        </dd>
 
-                    <div class="row">
-                        <div class="span3">
-                            <h2 id="people"><a class="anchor" href="#people">People</a></h2>
-                            <p>
-                                Active developers who are under the Lycus
-                                Foundation umbrella.
-                            </p>
-                        </div>
-                        <div class="span10">
-                            <dl>
-                                <dt>
-                                    Alex Rønne Petersen
-                                </dt>
-                                <dd>
-                                    <a href="http://xtzgzorex.wordpress.com/">Site</a> / <a href="mailto:alex@lycus.org">Email</a>
-                                </dd>
+                        <dt>
+                            Thomas Jost
+                        </dt>
+                        <dd>
+                            <a href="mailto:thomas@lycus.org">Email</a>
+                        </dd>
 
-                                <dt>
-                                    Thomas Jost
-                                </dt>
-                                <dd>
-                                    <a href="mailto:thomas@lycus.org">Email</a>
-                                </dd>
-
-                                <dt>
-                                    Tony Young
-                                </dt>
-                                <dd>
-                                    <a href="mailto:tony@lycus.org">Email</a>
-                                </dd>
-                            </dl>
-                        </div>
-                    </div>
+                        <dt>
+                            Tony Young
+                        </dt>
+                        <dd>
+                            <a href="mailto:tony@lycus.org">Email</a>
+                        </dd>
+                    </dl>
                 </div>
             </div>
             <footer>
                 <p>
                     Copyright &copy; The Lycus Foundation<br />
                     For any inquiries regarding the foundation, please
-                    <a href="mailto:alex@lycus.org">contact Alex</a>
+                    <a href="mailto:alex@lycus.org">contact Alex</a>.
                 </p>
             </footer>
         </div>
