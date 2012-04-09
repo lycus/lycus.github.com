@@ -28,11 +28,3 @@ body, p {
     margin-top: 25px;
 }
 
-.anchor {
-    color: inherit;
-}
-
-.anchor:hover {
-    color: inherit;
-    text-decoration: inherit;
-}
