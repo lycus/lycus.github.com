@@ -1,30 +1,36 @@
-#main {
+#main
+{
     margin-top: 30px;
 }
 
-#logo {
+#logo
+{
     text-align: center;
 }
 
-a {
+a
+{
     color: #93BD20;
 }
 
-a:hover {
+a:hover
+{
     color: #659E10;
 }
 
-body, p {
+body, p
+{
     font-family: "PT Sans", sans-serif;
 }
 
-.logo {
+.logo
+{
     float: left;
 }
 
-.flavor {
+.flavor
+{
     float: right;
     width: 753px;
     margin-top: 25px;
 }
-
