@@ -34,3 +34,13 @@ body, p
     width: 753px;
     margin-top: 25px;
 }
+
+.container
+{
+    width: 1000px;
+}
+
+.span3
+{
+    width: 240px;
+}
