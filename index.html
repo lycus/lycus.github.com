@@ -54,9 +54,6 @@
                                 <a href="irc://irc.oftc.net/mci">#mci</a>
                             </li>
                             <li>
-                                <a href="irc://irc.oftc.net/exvm">#exvm</a>
-                            </li>
-                            <li>
                                 <a href="irc://irc.oftc.net/cursive">#cursive</a>
                             </li>
                         </ul>
@@ -163,14 +160,14 @@
 
                     <div class="row">
                         <div class="span4">
-                            <h3><a href="http://github.com/lycus/flect">Flect</a> (<a href="https://github.com/lycus/flect/wiki">Docs</a>, <a href="http://lycus.org/flect/index.html">API</a>)</h3>
+                            <h3><a href="http://github.com/lycus/flect">Flect</a> (<a href="http://github.com/lycus/flect/wiki">Docs</a>, <a href="http://lycus.org/flect/index.html">API</a>)</h3>
                             <p>
                                 Flect is a functional systems programming language. It
                                 pragmatically combines features such as algebraic data types,
                                 pattern matching, first-class function values, traits, generics,
                                 macros, and high type safety with (optional) low-level control
                                 over memory, direct interfacing to C and C++, bare metal
-                                compilation support, and so on.
+                                compilation support, and other similar features.
                             </p>
                         </div>
 
@@ -190,14 +187,12 @@
 
                     <div class="row">
                         <div class="span4">
-                            <h3><a href="http://github.com/lycus/exvm">ExVM</a> (<a href="http://exvm.readthedocs.org">Docs</a>)</h3>
+                            <h3><a href="http://github.com/lycus/prismo">Prismo</a> (<a href="http://github.com/lycus/prismo/wiki">Docs</a>)</h3>
                             <p>
-                                ExVM (Extensible Virtual Machine) is a JIT-compiling virtual
-                                machine built on top of the MCI (Managed Compiler Infrastructure).
-                                It is a much more high-level virtual machine, defining an ABI
-                                (application binary interface) for many common compiler features
-                                such as name mangling, static/TLS data initialization, runtime
-                                type information and reflection, reified generics, etc.
+                                Prismo is an experimental dynamically-typed, multi-paradigm
+                                programming language combining features of imperative and
+                                functional languages. Its compiler and interpreter are
+                                implemented in the Rust programming language.
                             </p>
                         </div>
 
@@ -205,8 +200,8 @@
                             <h3><a href="http://github.com/lycus/cursive">Cursive</a> (<a href="http://cursive.readthedocs.org">Docs</a>)</h3>
                             <p>
                                 A functional-imperative language primarily used as a proof of
-                                concept for implementing a language on top of ExVM. It has
-                                a simple C-like syntax, with the addition of features such as
+                                concept for implementing a language on top of MCI. It has a
+                                simple C-like syntax, with the addition of features such as
                                 classes/interfaces (OOP), generics, lambda functions with
                                 closures, (limited) type inference, and garbage collection.
                             </p>
@@ -220,9 +215,8 @@
                                 ExoCore is an operating system kernel written in Clang-flavored
                                 C11. It is a so-called exokernel; it only provides the bare
                                 minimum of abstraction around the hardware (such as memory
-                                management, I/O operations, scheduling, etc). This design allows
-                                operating systems to be implemented on top of ExoCore in user
-                                space.
+                                management, I/O operations, scheduling, etc). It is primarily
+                                intended to be a reference project for learning purposes.
                             </p>
                         </div>
 
